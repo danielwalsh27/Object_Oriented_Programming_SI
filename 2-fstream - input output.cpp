@@ -1,51 +1,39 @@
 //create an array to hold 5 sentences
 //open the file titled "holds5lines.txt"
 //load the array with the 5 sentences from the txt file
-//
 //Print all 5 sentences
-//
 //create a file titled "createThisFile.txt"
 //reverse load the array into the new file
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//since we had extra time we also added an if/else statment to only have 5 total lines in our output file
 
 #include <iostream>
 #include <fstream>
 using namespace std;
 
 int main(){
+	//create an array to hold 5 sentences
 	string strArr[5];
 
+	//open the file titled "holds5lines.txt"
 	ifstream inputFile;
 	inputFile.open("holds5lines.txt");
+	
+	//load the array with the 5 sentences from the txt file
 	for(int i=0; i<5;i++){
 		getline(inputFile, strArr[i]);
 	}
 	inputFile.close();
 
-
+	//Print all 5 sentences
 	for(int i=0; i<5;i++){
 		cout << strArr[i] << "\n";
 	}
 
-
+	//create a file titled "createThisFile.txt"
 	ofstream outputFile;
 	outputFile.open("weWillCreateThisFile.txt");
+	
+	//reverse load the array into the new file
 	for(int i = 4; i >= 0; i--){
 		if (i>0)
 			outputFile << strArr[i] << endl;
@@ -58,35 +46,6 @@ int main(){
 	outputFile.close();
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-	when we get the program completed. we will then notice we created a 6th line in our ouput. Lets make it only 5.
-
-	ofstream outputFile;
-	outputFile.open("weWillCreateThisFile.txt");
-	for(int i = 4; i >= 0; i--){
-	if(i == 0)
-		outputFile << strArr[i];
-	else
-		outputFile << strArr[i] << endl;
-	}
-
-	//outputFile << strArr[4] << "\n" << strArr[3] << "\n" << strArr[2] << "\n" << strArr[1] << "\n" << strArr[0];
-	outputFile.close();
-
-	return 0;
-*/
+//REQUIRED LESSON- We spent 20 mintues teaching how fstream works, more specifally the use of ofstream and ifstream.
+//We covered how it has preloaded fucntions like .open() and .close(), and the proper use of them. We also when over that
+// ofstream can create a file by the use of the .open() function.
