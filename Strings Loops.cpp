@@ -1,3 +1,8 @@
+//create two arrays, one int & one string
+//these integers will hold the class number and the string will hold the title of the class
+//now lets go through and display our output
+//if time remains, have the studnets add st, nd, rd or th to the end of the required number, (1st, 2nd, 3rd.....)
+
 #include <iostream>
 using namespace std;
 
@@ -24,7 +29,7 @@ int main(){
 		cin.ignore();
 
 
-		cout << "please enter a match course name: \n";
+		cout << "please enter a matching course name: \n";
 		getline(cin, stringArr[i]);
 	}
 	// now lets go through and display our output
@@ -33,3 +38,7 @@ int main(){
 	}
 	return 0;
 }
+
+//REQURIED LESSON- we spent roughtly 10-15 mintues explaining the difference in cin, and getline. 
+//If you switch from cin to getline you must add cin.ignore(). But you can use cin repeatedly without it, and also getline with useing it.
+//Its only requred when you go from cin to getline. It is not needed going from getline to cin.
