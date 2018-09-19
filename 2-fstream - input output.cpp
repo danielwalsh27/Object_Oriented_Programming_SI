@@ -16,7 +16,7 @@ int main(){
 
 	//open the file titled "holds5lines.txt"
 	ifstream inputFile;
-	inputFile.open("holds5lines.txt");
+	inputFile.open("2-holds5lines.txt");
 	
 	//load the array with the 5 sentences from the txt file
 	for(int i=0; i<5;i++){
@@ -49,3 +49,5 @@ int main(){
 //REQUIRED LESSON- We spent 20 mintues teaching how fstream works, more specifally the use of ofstream and ifstream.
 //We covered how it has preloaded fucntions like .open() and .close(), and the proper use of them. We also when over that
 // ofstream can create a file by the use of the .open() function.
+
+//We must use the attached file "2-holds5lines.txt"
