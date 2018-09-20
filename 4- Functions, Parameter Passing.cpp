@@ -44,6 +44,7 @@ int main(){
 	printSubtract(num1, num2, num3);
 	printMultiply(num1, num2, num3);
 	printDivide(num1, num2, num3);
+	return 0;
 }
 
 //when this function is called it will add up the three numbers passed in and return the value
