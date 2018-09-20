@@ -64,6 +64,7 @@ int main(){
 	if(trigger == false){
 		cout << "Couldn't hack password. You win! ";
 	}
+	return 0;
 }
 //REQURIED LESSON- Students were very confused that we couldn't use an If/else statement. I taught them the use of a bool trigger.
 //By explanation only about half the students were able to grasp the concept, once I uncommented it out, they saw that it'll display MANY times.
