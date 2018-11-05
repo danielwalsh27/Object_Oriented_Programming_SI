@@ -16,7 +16,7 @@ int main(){
 
 	//open the file titled "holds5lines.txt"
 	ifstream inputFile;
-	inputFile.open("2-holds5lines.txt");
+	inputFile.open("1.2-holds5lines.txt");
 	
 	//load the array with the 5 sentences from the txt file
 	for(int i=0; i<5;i++){
