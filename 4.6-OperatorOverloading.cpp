@@ -50,8 +50,9 @@ public:
 		plot.width = width * obj.width;
 		return plot;
 
+	// C = A * B;
 	//plot.width 		= 			width 		* 				obj.width;
-	// temp obj^^ 				class obj^^				object passed in^^
+	// C.width^^ 		=		A.width^^		*				B.width	^^
 	}
 	Land operator /(Land &obj){
 		Land plot;
@@ -59,8 +60,9 @@ public:
 		plot.width = width / obj.width;
 		return plot;
 
+	// C = A / B;
 	//plot.width 		= 			width 		/ 				obj.width;
-	// temp obj^^ 				class obj^^				object passed in^^
+	// C.width^^ 		=		A.width^^		/				B.width	^^
 	}
 };
 
